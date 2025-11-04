@@ -1,0 +1,31 @@
+/* ============================================
+   CHECKBOX STYLES
+   Used in: Checkbox.tsx, TableOne.tsx, Tasks.tsx
+   ============================================ */
+
+/* Table Checkbox */
+.tableCheckbox:checked ~ span span {
+  @apply opacity-100;
+}
+
+.tableCheckbox:checked ~ span {
+  @apply border-brand-500 bg-brand-500;
+}
+
+/* Form Check Input */
+.form-check-input:checked ~ span {
+  @apply border-[6px] border-brand-500 bg-brand-500 dark:border-brand-500;
+}
+
+/* Task Checkbox */
+.taskCheckbox:checked ~ .box span {
+  @apply opacity-100 bg-brand-500;
+}
+
+.taskCheckbox:checked ~ p {
+  @apply text-gray-400 line-through;
+}
+
+.taskCheckbox:checked ~ .box {
+  @apply border-brand-500 bg-brand-500 dark:border-brand-500;
+}

@@ -1,0 +1,21 @@
+@layer base {
+  /* Border Color Defaults (Tailwind v4 compatibility) */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  /* Button Cursor */
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /* Body Base Styles */
+  body {
+    @apply relative font-normal font-outfit z-1 bg-gray-50;
+  }
+}

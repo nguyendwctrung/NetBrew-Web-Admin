@@ -1,0 +1,28 @@
+/* ============================================
+   CALENDAR & TASK STYLES
+   Used in: Calendar.tsx, Tasks.tsx
+   ============================================ */
+
+/* Custom Calendar */
+.custom-calendar .fc-h-event {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.fc.fc-media-screen {
+  @apply min-h-screen;
+}
+
+/* Task Drag & Drop */
+.task {
+  transition: all 0.2s ease;
+}
+
+.task {
+  border-radius: 0.75rem;
+  box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+  opacity: 0.8;
+  cursor: grabbing;
+}
